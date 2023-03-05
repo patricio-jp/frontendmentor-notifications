@@ -60,7 +60,7 @@ body {
     color: var(--grayishBlue);
 }
 
-#unreadMark {
+.unreadMark {
     color: var(--redMark);
 }
 
