@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+:root {
+    --redMark: hsl(1, 90%, 64%);
+    --primaryBlue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --darkBlue: hsl(224, 21%, 14%);
+    --darkGrayBlue: hsl(219, 12%, 42%);
+    --grayishBlue: hsl(219, 14%, 63%);
+    --veryLightGrayBlue: hsl(210, 60%, 98%);
+    --lightGrayBlue1: hsl(211, 68%, 94%);
+    --lightGrayBlue2: hsl(205, 33%, 90%);
+}
+
+body {
+    background-color: var(--veryLightGrayBlue);
+}
+
+.title {
+    color: var(--darkBlue);
+}
+
+#unreadCounter {
+    color: var(--white);
+    background-color: var(--primaryBlue);
+}
+
+#markAllRead {
+    color: var(--darkGrayBlue);
+}
+
+#markAllRead:hover {
+    color: var(--primaryBlue);
+}
+
+.unread {
+    background-color: var(--veryLightGrayBlue);
+}
+
+.notificationText {
+    color: var(--darkGrayBlue);
+}
+
+.notificationText > a:hover {
+    color: var(--primaryBlue);
+}
+
+.userInteract {
+    color: var(--darkBlue);
+}
+
+.notificationTime {
+    color: var(--grayishBlue);
+}
+
+#unreadMark {
+    color: var(--redMark);
+}
+
+.innerMessage {
+    border: 1px solid var(--lightGrayBlue2);
+    color: var(--darkGrayBlue);
+}
+
+.innerMessage:hover, .innerMessage:active {
+    background-color: var(--lightGrayBlue1);
+    border-color: var(--lightGrayBlue1);
+}
+
+.notificationPicture:hover, .notificationPicture:active {
+    outline: 2px solid var(--lightGrayBlue1);
+}

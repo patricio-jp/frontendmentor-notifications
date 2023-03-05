@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="p-6">
+  <main>
+    <section class="p-4 bg-white mx-auto max-w-2xl rounded-2xl">
+      <header class="flex items-center justify-between mb-4">
+        <div class="flex items-center font-extrabold">
+          <h1 class="text-xl title">Notifications</h1>
+          <span id="unreadCounter" class="inline-block ml-2 rounded-md px-2.5 text-base">3</span>
+        </div>
+        <a href="#" id="markAllRead" class="block text-sm font-semibold">Mark all as read</a>
+      </header>
+      <ul class="list-none flex flex-col justify-center text-sm space-y-3" id="notifications">
+        <li class="flex p-4 rounded-lg unread">
+          <figure class="mr-3 min-w-max">
+            <img src="./assets/images/avatar-mark-webber.webp" class="w-10" alt="Mark Webber avatar">
+          </figure>
+          <div>
+            <p class="notificationText font-medium"><a href="#" class="userInteract font-extrabold">Mark
+                Webber </a> reacted to
+              your recent
+              post <a href="#" class="font-extrabold"> My first tournament today! </a><span id="unreadMark"
+                class="text-xs"> ●</span></p>
+            <p class="font-medium notificationTime">1m ago</p>
+          </div>
+        </li>
+        <li class="flex p-4 rounded-lg unread">
+          <figure class="mr-3 min-w-max">
+            <img src="./assets/images/avatar-angela-gray.webp" class="w-10" alt="Angela Gray avatar">
+          </figure>
+          <div>
+            <p class="notificationText font-medium"><a href="#" class="userInteract font-extrabold">Angela Gray </a>
+              followed you <span id="unreadMark" class="text-xs"> ●</span></p>
+            <p class="font-medium notificationTime">5m ago</p>
+          </div>
+        </li>
+        <li class="flex p-4 rounded-lg unread">
+          <figure class="mr-3 min-w-max">
+            <img src="./assets/images/avatar-jacob-thompson.webp" class="w-10" alt="Jacob Thompson avatar">
+          </figure>
+          <div>
+            <p class="notificationText font-medium"><a href="#" class="userInteract font-extrabold">Jacob Thompson </a>
+              has joined your group <a href="#" class="font-extrabold"> Chess Club </a><span id="unreadMark"
+                class="text-xs"> ●</span></p>
+            <p class="font-medium notificationTime">1 day ago</p>
+          </div>
+        </li>
+        <li class="flex p-4 rounded-lg">
+          <figure class="mr-3 min-w-max">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="w-10" alt="Rizky Hasanuddin avatar">
+          </figure>
+          <div>
+            <p class="notificationText font-medium"><a href="#" class="userInteract font-extrabold">Rizky Hasanuddin
+              </a> sent you a private
+              message</p>
+            <p class="font-medium notificationTime">5 days ago</p>
+            <a href="#" class="block p-3 mt-3 innerMessage rounded-md font-medium">Hello, thanks for setting up the
+              Chess Club.
+              I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</a>
+          </div>
+        </li>
+        <li class="flex p-4 rounded-lg">
+          <figure class="mr-3 min-w-max">
+            <img src="./assets/images/avatar-kimberly-smith.webp" class="w-10" alt="Kimberly Smith avatar">
+          </figure>
+          <div class="flex justify-between items-start">
+            <div>
+              <p class="notificationText font-medium"><a href="#" class="userInteract font-extrabold">Kimberly Smith
+                </a> commented on your picture
+              </p>
+              <p class="font-medium notificationTime">1 week ago</p>
+            </div>
+            <a class="ml-3 block min-w-max notificationPicture rounded-md">
+              <img src="./assets/images/image-chess.webp" alt="" class="w-10">
+            </a>
+          </div>
+        </li>
+        <li class="flex p-4 rounded-lg">
+          <figure class="mr-3 min-w-max">
+            <img src="./assets/images/avatar-nathan-peterson.webp" class="w-10" alt="Nathan Peterson avatar">
+          </figure>
+          <div>
+            <p class="notificationText font-medium"><a href="#" class="userInteract font-extrabold">Nathan Peterson </a>
+              reacted to your recent
+              post <a href="#" class="font-extrabold"> 5 end-game strategies to increase your win
+                rate</a></p>
+            <p class="font-medium notificationTime">2 weeks ago</p>
+          </div>
+        </li>
+        <li class="flex p-4 rounded-lg">
+          <figure class="mr-3 min-w-max">
+            <img src="./assets/images/avatar-anna-kim.webp" class="w-10" alt="Anna Kim avatar">
+          </figure>
+          <div>
+            <p class="notificationText font-medium"><a href="#" class="userInteract font-extrabold">Anna Kim </a> left
+              the group <a href="#" class="font-extrabold hover:text-blue-900"> Chess Club</a></p>
+            <p class="font-medium notificationTime">2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <div class="attribution py-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/patricio-jp">patricio-jp</a>.
+  </div>
+</body>
+
+</html>
