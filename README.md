@@ -10,9 +10,8 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
     -   [Links](#links)
 -   [My process](#my-process)
     -   [Built with](#built-with)
+    -   [Useful resources](#useful-resources)
 -   [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [https://github.com/patricio-jp/frontendmentor-notifications](https://github.com/patricio-jp/frontendmentor-notifications)
+-   Live Site URL: [https://patricio-jp.github.io/frontendmentor-notifications/](https://patricio-jp.github.io/frontendmentor-notifications/)
 
 ## My process
 
@@ -41,9 +40,12 @@ Users should be able to:
 -   Semantic HTML5 markup
 -   CSS custom properties
 -   Flexbox
--   CSS Grid
 -   Mobile-first workflow
 -   [Tailwind CSS](https://tailwindcss.com/) - For styles
+
+### Useful resources
+
+-   [HTMLCollection forEach loop - gavsblog](https://www.gavsblog.com/blog/htmlcollection-foreach-loop-convert-object-to-array-javascript) - This was an article I read because I didn't know how to iterate an HTMLCollection. There are several methods you can try, I tried only one method to iterate a HTMLCollection.
 
 ## Author
 
